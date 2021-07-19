@@ -24,6 +24,7 @@ namespace MP3Modifier
             InitializeComponent();
             ChangeSongNameBox.Hide();
             OnNewSong += MP3ModUI_OnNewSong;
+            Icon = Images.mp3_mod_logo_asIcon;
         }
         #region Fields&Props
         private bool FileHasBeenModified { get; set; }

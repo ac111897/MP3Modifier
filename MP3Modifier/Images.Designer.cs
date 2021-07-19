@@ -61,6 +61,16 @@ namespace MP3Modifier {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        public static System.Drawing.Icon mp3_mod_logo_asIcon {
+            get {
+                object obj = ResourceManager.GetObject("mp3_mod_logo_asIcon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap no_image_found {

@@ -4,6 +4,8 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>mp3_mod_logo_asIcon.ico</ApplicationIcon>
+    <RepositoryUrl>https://github.com/ac111897/MP3Modifier</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
