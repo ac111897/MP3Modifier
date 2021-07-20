@@ -167,11 +167,26 @@ namespace MP3Modifier
             {
                 FilePath = dialog.FileName;
                 FileHasBeenModified = false;
-                CurrentSong = new Song(TagLib.File.Create(dialog.FileName), true)
+                try
                 {
-                    FileName = dialog.SafeFileName
-                };
-                BitRate.Text = $"{CurrentSong.BitRate}kbps";
+                    CurrentSong = new Song(TagLib.File.Create(dialog.FileName), true)
+                    {
+                        FileName = dialog.SafeFileName
+                    };
+                    BitRate.Text = $"{CurrentSong.BitRate}kbps";
+                }
+                catch (CorruptFileException ex)
+                {
+                    MessageBox.Show(ex.Message, "Corrupt File");
+                }
+                catch (UnsupportedFormatException ex)
+                {
+                    MessageBox.Show(ex.Message, "Unsupported Format");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "An error has occured");
+                }
             }
         }
         /// <summary>
