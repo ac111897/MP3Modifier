@@ -98,6 +98,8 @@ namespace MP3Modifier
             if (CurrentSong is null) return;
             else if (FileHasBeenModified) return;
             field.Hide();
+            box.Size = field.Size;
+            box.Location = field.Location;
             box.Text = field.Text;
             box.Show();
             box.Visible = true;

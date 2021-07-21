@@ -67,40 +67,44 @@ namespace MP3Modifier
             // 
             // FileStrip
             // 
-            this.FileStrip.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FileStrip.BackColor = System.Drawing.Color.Gainsboro;
             this.FileStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
             this.helpToolStripMenuItem});
+            this.FileStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.FileStrip.Location = new System.Drawing.Point(0, 0);
             this.FileStrip.Name = "FileStrip";
-            this.FileStrip.Size = new System.Drawing.Size(779, 24);
+            this.FileStrip.Padding = new System.Windows.Forms.Padding(0);
+            this.FileStrip.Size = new System.Drawing.Size(784, 24);
             this.FileStrip.TabIndex = 0;
             this.FileStrip.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.fileToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripMenuItem,
             this.SaveThumbnailtoolStripMenuItem,
             this.ExitToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.fileToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.OpenToolStripMenuItem_Click);
             // 
             // SaveThumbnailtoolStripMenuItem
             // 
             this.SaveThumbnailtoolStripMenuItem.Name = "SaveThumbnailtoolStripMenuItem";
-            this.SaveThumbnailtoolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.SaveThumbnailtoolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.SaveThumbnailtoolStripMenuItem.Text = "Save Thumbnail..";
             this.SaveThumbnailtoolStripMenuItem.Click += new System.EventHandler(this.SaveThumbnailtoolStripMenuItem_Click);
             // 
@@ -108,30 +112,34 @@ namespace MP3Modifier
             // 
             this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
             this.ExitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ExitToolStripMenuItem.Text = "Exit";
             this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.editToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.editToolStripMenuItem.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 24);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.helpToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -180,11 +188,12 @@ namespace MP3Modifier
             // ChangeSongNameBox
             // 
             this.ChangeSongNameBox.Enabled = false;
-            this.ChangeSongNameBox.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ChangeSongNameBox.Location = new System.Drawing.Point(92, 34);
+            this.ChangeSongNameBox.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ChangeSongNameBox.Location = new System.Drawing.Point(98, 34);
+            this.ChangeSongNameBox.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.ChangeSongNameBox.Multiline = false;
             this.ChangeSongNameBox.Name = "ChangeSongNameBox";
-            this.ChangeSongNameBox.Size = new System.Drawing.Size(403, 31);
+            this.ChangeSongNameBox.Size = new System.Drawing.Size(410, 31);
             this.ChangeSongNameBox.TabIndex = 5;
             this.ChangeSongNameBox.Text = "";
             this.ChangeSongNameBox.Visible = false;
@@ -193,11 +202,13 @@ namespace MP3Modifier
             // SongCover
             // 
             this.SongCover.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SongCover.BackgroundImage = global::MP3Modifier.Images.no_image_found;
+            this.SongCover.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.SongCover.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SongCover.ErrorImage = global::MP3Modifier.Images.no_image_found;
             this.SongCover.Location = new System.Drawing.Point(600, 27);
             this.SongCover.Name = "SongCover";
-            this.SongCover.Size = new System.Drawing.Size(177, 171);
+            this.SongCover.Size = new System.Drawing.Size(180, 180);
             this.SongCover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SongCover.TabIndex = 6;
             this.SongCover.TabStop = false;
@@ -206,11 +217,12 @@ namespace MP3Modifier
             // ChangeArtistsBox
             // 
             this.ChangeArtistsBox.Enabled = false;
-            this.ChangeArtistsBox.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ChangeArtistsBox.Location = new System.Drawing.Point(150, 74);
+            this.ChangeArtistsBox.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ChangeArtistsBox.Location = new System.Drawing.Point(153, 75);
+            this.ChangeArtistsBox.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.ChangeArtistsBox.Multiline = false;
             this.ChangeArtistsBox.Name = "ChangeArtistsBox";
-            this.ChangeArtistsBox.Size = new System.Drawing.Size(403, 31);
+            this.ChangeArtistsBox.Size = new System.Drawing.Size(355, 31);
             this.ChangeArtistsBox.TabIndex = 7;
             this.ChangeArtistsBox.Text = "";
             this.ChangeArtistsBox.Visible = false;
@@ -240,11 +252,13 @@ namespace MP3Modifier
             // ChangeAlbumBox
             // 
             this.ChangeAlbumBox.Enabled = false;
-            this.ChangeAlbumBox.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ChangeAlbumBox.Location = new System.Drawing.Point(121, 120);
+            this.ChangeAlbumBox.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ChangeAlbumBox.Location = new System.Drawing.Point(124, 119);
+            this.ChangeAlbumBox.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.ChangeAlbumBox.Multiline = false;
             this.ChangeAlbumBox.Name = "ChangeAlbumBox";
-            this.ChangeAlbumBox.Size = new System.Drawing.Size(403, 31);
+            this.ChangeAlbumBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.ChangeAlbumBox.Size = new System.Drawing.Size(384, 31);
             this.ChangeAlbumBox.TabIndex = 10;
             this.ChangeAlbumBox.Text = "";
             this.ChangeAlbumBox.Visible = false;
@@ -347,7 +361,7 @@ namespace MP3Modifier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 403);
+            this.ClientSize = new System.Drawing.Size(784, 361);
             this.Controls.Add(this.WarningLabel);
             this.Controls.Add(this.ReadOnlyLabel);
             this.Controls.Add(this.BitRate);
@@ -368,6 +382,8 @@ namespace MP3Modifier
             this.Controls.Add(this.ArtistNameTitle);
             this.Controls.Add(this.SongNameTitle);
             this.MainMenuStrip = this.FileStrip;
+            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(800, 400);
             this.Name = "MP3ModUI";
             this.Text = "MP3 Modifier";
             this.FileStrip.ResumeLayout(false);
