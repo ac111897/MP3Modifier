@@ -97,14 +97,14 @@ namespace MP3Modifier
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.OpenToolStripMenuItem_Click);
             // 
             // SaveThumbnailtoolStripMenuItem
             // 
             this.SaveThumbnailtoolStripMenuItem.Name = "SaveThumbnailtoolStripMenuItem";
-            this.SaveThumbnailtoolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.SaveThumbnailtoolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.SaveThumbnailtoolStripMenuItem.Text = "Save Thumbnail..";
             this.SaveThumbnailtoolStripMenuItem.Click += new System.EventHandler(this.SaveThumbnailtoolStripMenuItem_Click);
             // 
@@ -112,7 +112,7 @@ namespace MP3Modifier
             // 
             this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
             this.ExitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.ExitToolStripMenuItem.Text = "Exit";
             this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -139,7 +139,7 @@ namespace MP3Modifier
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -188,7 +188,7 @@ namespace MP3Modifier
             // ChangeSongNameBox
             // 
             this.ChangeSongNameBox.Enabled = false;
-            this.ChangeSongNameBox.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ChangeSongNameBox.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ChangeSongNameBox.Location = new System.Drawing.Point(98, 34);
             this.ChangeSongNameBox.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.ChangeSongNameBox.Multiline = false;
@@ -217,7 +217,7 @@ namespace MP3Modifier
             // ChangeArtistsBox
             // 
             this.ChangeArtistsBox.Enabled = false;
-            this.ChangeArtistsBox.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ChangeArtistsBox.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ChangeArtistsBox.Location = new System.Drawing.Point(153, 75);
             this.ChangeArtistsBox.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.ChangeArtistsBox.Multiline = false;
@@ -252,7 +252,7 @@ namespace MP3Modifier
             // ChangeAlbumBox
             // 
             this.ChangeAlbumBox.Enabled = false;
-            this.ChangeAlbumBox.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ChangeAlbumBox.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ChangeAlbumBox.Location = new System.Drawing.Point(124, 119);
             this.ChangeAlbumBox.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.ChangeAlbumBox.Multiline = false;
